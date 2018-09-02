@@ -47,6 +47,7 @@ class App extends Component {
     return (
       <div className="main-app">
         <h3>Youtube Search App</h3>
+        <p>Use the search bar below to search for videos (using the Youtube API)</p>
         <SearchBar
         onSearchTermChange={videoSearch}/>
         <VideoDetail

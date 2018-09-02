@@ -35,7 +35,7 @@ body, html {
   background: #eee;
 }
 
-.main-app > h3 {
+.main-app > h3, .main-app > p {
   text-align: center;
   margin: 20px;
 }

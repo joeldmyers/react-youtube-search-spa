@@ -6,7 +6,7 @@ class SearchBar extends Component {
     super(props);
 
     this.state = {
-      searchTerm: ''
+      searchTerm: 'Search videos...'
     };
   }
 
@@ -16,12 +16,26 @@ class SearchBar extends Component {
     this.props.onSearchTermChange(term);
   }
 
+  onClickSearchBar(searchTerm) {
+    if (searchTerm === 'Search videos...') {
+      this.setState({searchTerm: ''});
+    }
+  }
+
+  onBlurSearchBar(searchTerm) {
+    if (searchTerm === '') {
+      this.setState({searchTerm: 'Search videos...'});
+    }
+  }
+
   // render component
   render() {
     return (
       <div className="search-bar">
         <input
           value={this.state.searchTerm}
+          onFocus={() => this.onClickSearchBar(this.state.searchTerm)}
+          onBlur={() => this.onBlurSearchBar(this.state.searchTerm)}
           onChange={ event => this.onInputChange(event.target.value) } />
       </div>
     );
