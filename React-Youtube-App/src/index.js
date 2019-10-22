@@ -10,7 +10,7 @@ import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 
 // youtube API key for searches
-const YOUTUBE_API_KEY = 'AIzaSyB1ACzPBlhVNVlHxFZgPiJHo4Q9riuV9PI';
+const YOUTUBE_API_KEY = 'AIzaSyAJhfL9mmBo6qs3QCAf4ZjGrX07XIUFu00';
 
 
 // App
